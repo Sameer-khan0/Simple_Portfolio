@@ -4,10 +4,9 @@ body {
     padding: 0;
 }
 /* CSS for Contact Form Section */
-.contact {
-  height: 110vh;
+#contact {
+    height: 110vh;
     background-color: #f9f9f9;
-    padding: 60px 0;
     text-align: center;
   }
   
