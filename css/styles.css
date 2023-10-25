@@ -8,6 +8,9 @@ body {
     height: 110vh;
     background-color: #f9f9f9;
     text-align: center;
+    justify-content: center;
+  display: flex;
+  flex-direction: column;
   }
   
   .contact .heading {
@@ -15,7 +18,13 @@ body {
     margin-bottom: 30px;
     color: #333;
   }
-  
+  .ab20{
+    width: 100%;
+  height: 90%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  }
   .contact form {
     width: 800px;
     margin: 0 auto;
@@ -109,7 +118,7 @@ body {
     background: aliceblue
 }
 .hero{
-    height: 90vh;
+    height: 100vh;
 }
 .contact {
     text-align: center;
@@ -137,11 +146,6 @@ body {
     background-color: #ffffff;
     border-color: #007bff; 
   }
-
-.projects{
-    height: 100vh;
-}
-
 .maintext{
     width: 100%;
     text-align: start;
@@ -150,13 +154,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
+  }
+ 
 .con1_main img{
-    border-top-left-radius: 30%;
+  border-top-left-radius: 30%;
   border-bottom-right-radius: 30%;
   border-block-style: ridge;
   box-shadow: 0px 10px 10px #007cff;
   border: 10px solid white;
+  transition: transform 0.5s ease-in-out;
+}
+.con1_main img:hover {
+  box-shadow: 0px 15px 15px #007cff;
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 form input[type="submit"] {
     background: #1d88f2;
@@ -210,7 +221,7 @@ footer {
 .mainsec{
     display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 .abdfirst{
     display: flex;
@@ -218,8 +229,13 @@ footer {
     align-items: center;
 }
 .abimage{
-    border: 10px solid rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px rgb(0, 110, 255);
+  border: 10px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgb(0, 110, 255);
+  transition: transform 0.3s ease;
+}
+.abimage:hover{
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 .abname{
     font-size: xx-large;
@@ -270,6 +286,7 @@ footer {
 }
 
 .container0 img {
+  transition: transform 0.5s ease-in-out;
     max-width: 100%;
 }
 .btn0 a{
@@ -363,7 +380,6 @@ footer {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
   }
   
   .services-box:hover {
@@ -405,4 +421,63 @@ footer {
       width: 100%;
     }
   }
+  
+ /* Set the project section height to 100% of the viewport height */
+#projectS {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+}
+
+.projectS_m {
+  text-align: center;
+}
+
+/* Heading styles */
+.heading h2 {
+  font-size: 36px;
+  /* font-weight: bold; */
+  color: #333;
+  /* margin-bottom: 20px; */
+}
+
+/* Span styles for emphasis */
+.heading span {
+  color: #007bff;
+}
+
+.maincon {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  width: 300px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.project-box a{
+  text-decoration: none;
+  color: initial;
+  font-weight: bold;
+}
+.project-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure images inside project boxes are responsive */
+.project-box img {
+  width: 100%;
+  height: auto;
+}
+
   
